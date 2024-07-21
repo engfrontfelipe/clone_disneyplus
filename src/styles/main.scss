@@ -1,6 +1,53 @@
-$bgColor: red;
+@use '_hero';
+
+$bgColor: #040714;
+$TextoPrincipal: silver; 
+$TextoSecundario: #f9f9f9;
 
 body{
     background-color: $bgColor;
-    color: black;
+}
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $TextoPrincipal;
+}
+
+@mixin tittle($fontSize: 40px){
+    @include text($fontSize);
+    color: $TextoSecundario;
+}
+
+//text_config
+
+.text--big{
+    @include text(18px);
+}
+
+.text{
+    @include text;
+}
+
+.text--small{
+    @include text(12px);
+}
+
+//tittle_config
+
+.tittle--big{
+    @include tittle(44px);
+}
+
+.tittle{
+    @include tittle;
+}
+.tittle--small{
+    @include tittle(28px);
+}
+
+.link--text{
+    @include text(18px);
+    color: $TextoSecundario;
+    text-decoration: underline;
 }
