@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
     <title>Clone Disney+</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
@@ -42,5 +42,108 @@
             </p>
         </div> 
     </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is--active">
+                Em breve
+            </button>
+
+            <button data-tab-button="mais_populares" class="shows__tabs__button">
+                Mais Populares 
+            </button>
+
+            <button data-tab-button="mais_no_star" class="shows__tabs__button">
+                Mais no Star+
+            </button>
+        </nav>
+        
+        <!-- Em breve -->
+
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is--active">   
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/desencantada.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg">
+            </li>
+        </ul>
+
+        <!-- Mais Populares -->
+        
+        <ul data-tab-id="mais_populares" class="shows__list">   
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/bluey.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/obi_wan.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/red.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg">
+            </li>
+        </ul>
+
+        <!-- Mais no star+ -->
+
+        <ul data-tab-id="mais_no_star" class="shows__list">   
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg">
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg">
+            </li>
+        </ul>
+    </section>
+    s
+    
 </body>
+<script src="src/main.js"></script>
 </html>
