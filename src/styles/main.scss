@@ -1,22 +1,32 @@
+@use 'variaveis';
 @use '_hero';
 
-$bgColor: #040714;
-$TextoPrincipal: silver; 
-$TextoSecundario: #f9f9f9;
+@font-face{
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
 
 body{
-    background-color: $bgColor;
+    background-color: variaveis.$bgColor ;
+    font-family: Avenir, sans-serif;
 }
 
 @mixin text($fontSize: 16px){
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color: $TextoPrincipal;
+    color: variaveis.$TextoPrincipal;
 }
 
 @mixin tittle($fontSize: 40px){
     @include text($fontSize);
-    color: $TextoSecundario;
+    color: variaveis.$TextoSecundario;
 }
 
 //text_config
@@ -25,7 +35,7 @@ body{
     @include text(18px);
 }
 
-.text{
+.text--medium{
     @include text;
 }
 
@@ -39,7 +49,7 @@ body{
     @include tittle(44px);
 }
 
-.tittle{
+.tittle--medium{
     @include tittle;
 }
 .tittle--small{
@@ -48,6 +58,6 @@ body{
 
 .link--text{
     @include text(18px);
-    color: $TextoSecundario;
+    color: variaveis.$TextoSecundario;
     text-decoration: underline;
 }
