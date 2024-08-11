@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use '_hero';
 @use '_shows';
+@use '_plans';
 
 @font-face{
     font-family: Avenir;
@@ -67,4 +68,18 @@ body{
     @include text(18px);
     color: variaveis.$TextoSecundario;
     text-decoration: underline;
+}
+
+.button{
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$TextoSecundario;
+    background-color: #6421ff;
+    border-radius: 4px;
+    margin-top: 2vh;
+    margin-bottom: 8px;  
+    cursor: pointer;
+    border: none;                  
 }
