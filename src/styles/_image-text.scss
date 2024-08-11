@@ -1,0 +1,31 @@
+.image-text{
+    padding: 5.6vw;
+    display: block;
+    align-items: center;
+    position: relative;
+    
+
+    img{
+        width: 100%;
+
+    }
+
+    div{
+        padding: 0 2vw;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: calc(50% - 5.6vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2{
+            margin-bottom: 24px;
+        }
+    }
+}
+
+
