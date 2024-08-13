@@ -3,7 +3,9 @@ document.body.style.zoom = "80%"
 document.addEventListener('DOMContentLoaded', function() {
 
     const buttons = document.querySelectorAll('[data-tab-button]');
+    const questions = document.querySelectorAll('[data-faq-question]');
     
+    //    função criada para realizar o desenvolvimento da section 'shows'
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function(botao) {
             const abaAlvo = botao.target.dataset.tabButton;
@@ -14,7 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
             botao.target.classList.add('shows__tabs__button--is--active')
         });
     }
+
+    for  (let i = 0; i < questions.length; i++){
+        questions[i].addEventListener('click', function(elemento) {
+            const classe = 'faq__questions__item--is-open';
+            const elementoPai = elemento.target.parentNode;
+            elementoPai.classList.toggle(classe); 
+        })
+    }
 });
+
+
+
 
 function removeBotaoAtivo(){
     const buttons = document.querySelectorAll('[data-tab-button]');
