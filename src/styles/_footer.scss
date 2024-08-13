@@ -1,0 +1,70 @@
+@use 'variaveis';
+
+.footer{
+    &__logo{
+       width: 80px;
+       margin: 0 auto 10px;
+    }
+
+    &__container{
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__links{
+       margin-bottom: 16px; 
+       display: flex;
+        
+
+        &__item{
+            list-style: none;
+            
+            a{
+                text-decoration: none; 
+                padding: 8px 16px;
+                display: block;
+
+                    &:hover{
+                        color: variaveis.$TextoSecundario
+                    }
+            }
+        }
+
+    }
+    p{
+        margin-bottom: 16px;
+    }
+}
+
+.language-selector{
+
+    display: flex;
+    align-items: center;
+
+    img{
+        height: 18px;
+        width: 18px;
+    }
+
+    select{
+        height: 38px;
+        background-color: transparent;
+        border: none;
+        color: variaveis.$TextoPrincipal;
+
+        &:hover{
+            color: variaveis.$TextoSecundario;
+        }
+        
+        option{
+            color: variaveis.$bgColor;
+
+            &:hover{
+                background-color: variaveis.$bgColor;
+            }
+        }
+    }
+}
